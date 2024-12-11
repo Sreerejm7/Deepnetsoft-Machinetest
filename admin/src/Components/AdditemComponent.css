@@ -1,0 +1,55 @@
+
+.additemcomponent{
+  height: auto;
+  padding: 20px;
+  background-size: cover;
+}
+
+.additem{
+  padding: 10PX;
+  height: auto;
+}
+
+.additem > h2{
+  font-size: 30px;
+  color: rgb(51, 51, 214);
+}
+
+.additemform{
+  padding: 10PX;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-bottom: 30px;
+}
+
+.formitem{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.formitem > label{
+  font-family: sans-serif;
+}
+
+.formitem > input{
+  width: 80%;
+  height: 40px;
+}
+
+.formitem > textarea{
+  width: 80%;
+  height: 80px;
+  resize: none;
+}
+
+.additembutton{
+  width: 30%;
+  height: 50px;
+  align-self: center;
+  background-color: black;
+  color: white;
+  border: none;
+  font-weight: 600;
+}

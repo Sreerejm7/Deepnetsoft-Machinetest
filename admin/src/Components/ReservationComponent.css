@@ -1,0 +1,40 @@
+.reservationcomponent{
+  min-height: 800px;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgb(220, 210, 210);
+}
+
+.reservation-header{
+  margin-top: 40px;
+}
+
+.reservation-header >h2{
+  font-size: 30px;
+}
+
+.reservation-details{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 5px;
+}
+
+.reservation-details >p{
+  font-size: 20px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.reservation-button{
+  background-color: red;
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+}

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Outfit:wght@100..900&display=swap');
+
+.homecontainer{
+  width: 100%;
+  min-height: 700px;
+  height: auto;
+
+  background-size: cover;
+  display: flex;
+}
+
+.home-info{
+  max-width: 600px;
+  width: 100%;
+  background-color: rgba(11, 1, 1, 0.17);
+  margin: 50px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.home-info >h1{
+  color: rgb(29, 28, 28);
+  text-shadow: 3px 2px 2px red ;
+  font-size: 70px;
+}
+
+.homecontent{
+  font-size: 20px;
+ font-family: kelly slab;
+ color: white;
+ 
+}
+
+.home-button{
+  margin-top: 50px;
+  width: 40%;
+  height: 50px;
+  background-color: black;
+  color: white;
+  font-weight: 800;
+  align-self: center;
+}

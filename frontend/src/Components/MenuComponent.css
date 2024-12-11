@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Outfit:wght@100..900&display=swap');
+
+.menu{
+  width: 100%; 
+}
+
+.menu-menu{
+  width: 100%;
+  height: 311px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-con{
+  max-width: 1440px;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.menu-first{
+  font-size: 75px;
+  font-weight: 600;
+  font-family: oswald;
+  text-shadow: 4px 2px 3px red;
+}
+
+.menu-description{
+  max-width: 600px;
+  text-align: center;
+  font-size: 18px;
+  color: #BBBBBB;
+  font-family: kelly slab;
+}
+
+.menu-second{
+  height: 79px;
+  width: 100%;
+  background: url('C:\Users\91759\OneDrive\Desktop\SREEREJ\Machine Test\frontend\src\Assets\Rectangle 107.png') no-repeat center;
+  background-size: cover;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-second > button{
+  max-width: 100px;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #0796ef;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  font-family: oswald;
+  cursor: pointer;
+}
+
+.menu-second > button:hover{
+  border: 3px solid #0796ef;
+}
+
+.menu-second > button:active{
+ background-color: #0796ef;
+}
+
+.menu-third{
+  width: 100%;
+  min-height: 672px;
+  height: 100%;
+  background: url('C:\Users\91759\OneDrive\Desktop\SREEREJ\Machine Test\frontend\src\Assets\Rectangle 116.png') no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-third-container{
+  max-width: 1140px;
+  width: 100%;
+  height: auto;
+  border: 1px solid white;
+  color: white;
+  padding: 20px;
+  background-color: transparent;
+  margin: 12%;
+  border-radius: 15px;
+}
+
+
+
+.menu-item-name{
+  display: flex;
+  justify-self: center;
+  padding-top: 50px;
+  font-size: 50px;
+  text-shadow: 5px 2px 0px rgb(160, 20, 20);
+  justify-self: center;
+  text-align: center;
+}
+
+.horizontalline{
+    width: 68px;
+    height: 3px; 
+    background-color: white; 
+    border: none; 
+    color:#857878;
+    margin: 35px 10px;
+}
+
+.menu-items-div{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.menu-item{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.menu-item >h4{
+  width: 100%;
+  display: flex;
+  font-size: 26px;
+  font-family: oswald;
+  
+}
+
+.menu-item-detail{
+  max-width: 500px;
+  font-family: kelly slab;
+  color: #BBBBBB;
+}
+
+.menu-fourth{
+  width: 100%;
+  min-height: 220px;
+  height: auto;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 0px;
+}
+
+.datacard1,.datacard2,.datacard3{
+  width: 373px;
+  height: 134px;
+  border-radius: 15px;
+  border: 1px solid #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.connect,.findus{
+  font-size: 16px;
+  font-family: oswald;
+  font-weight: 500;
+  color: #0796ef;
+  align-self: center;
+  padding-bottom: 10px;
+}
+.connect-details, .find-details{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.connect-detail{
+  display: flex;
+  color: #857878;
+  font-size: 16px;
+  font-family: oswald;
+}
+
+
+.find-detail{
+  display: flex;
+  color: #857878;
+  font-size: 16px;
+  font-family: oswald;
+  max-width: 200px;
+}
+.com-logo{
+  width: auto;
+  margin-top: -65px;
+  background-color: black;
+}
+
+.com-name{
+  display: flex;
+  gap: 5px;
+}
+
+.com-name >p{
+  font-size: 35px;
+  font-family: oswald;
+}
+
+.com-connect{
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width:768px) {
+  .menu-items-div{
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  .menu-fourth{
+    flex-direction: column;
+  }
+  .datacard2{
+    order: 1;
+  }
+
+  .datacard1{
+    order: 2;
+  }
+  .datacard3{
+    order: 3;
+  }
+
+  .menu-third-container{
+    margin: 8%;
+  }
+}
+
+@media (max-width:480px){
+  .menu-third-container{
+    width: 310px;
+  }
+
+  .menu-item-name{
+    font-size: 30px;
+  }
+
+  .datacard1,.datacard2,.datacard3{
+    width: 350px;
+  }
+  .menu-second > button{
+    width: 80px;
+  }
+}

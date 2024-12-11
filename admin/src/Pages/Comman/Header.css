@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+.headermain {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  height: 100px;
+  background-color: black;
+  width: 100%;
+  height: 80px;
+
+  box-sizing: border-box;
+}
+
+.headleft {
+  display: flex;
+  align-items: center;
+  padding-top: 78px;
+  margin-left: 80px;
+}
+
+.logo {
+  width: 60px; 
+  height: 60px;
+  margin-right: 20px; 
+}
+
+.Brandname {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bfirst,.bsecond p {
+  font-size: 24px; 
+  font-family: oswald;
+}
+
+.bfirst {
+  display: flex;
+  gap: 5px;
+}
+
+.headright {
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+.headright ul {
+  display: flex;
+  gap: 50px;
+  list-style-type: none;
+  color: white;
+  font-size: 14px; 
+  margin-top: 60px;
+  padding-left: 30px;
+}
+
+.headright ul li {
+  cursor: pointer;
+}
+.hamburger{
+  display: none;
+}
+.sidenavbar {
+  position: fixed;
+  width: 0;
+  height: 100vh;
+  background-color: white;
+  right: 0;
+  overflow: hidden; 
+  transition: width 0.2s ease; 
+  visibility: hidden;
+  opacity: 0; 
+}
+
+.on {
+  width: 60%; 
+  visibility: visible; 
+  opacity: 1; 
+}
+
+.sidenavbar ul {
+  list-style-type: none;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-family: Oswald;
+}
+
+.sidenavbartop {
+  width: 100%;
+  height: 60px;
+  position: relative;
+}
+
+.cross {
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  margin-top: 4px;
+  background-color: #0000001d;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.cross:hover {
+  background-color: #0000008d;
+}
+
+
+@media (max-width: 768px) {
+  .headermain {
+    justify-content: space-between;
+  }
+.hamburger{
+  display: block;
+  align-self: center;
+}
+.headright{
+display: none;
+}
+
+}
+
+@media  (max-width:426px){
+  .Brandname{
+      display: none;
+  }
+ .headmain{
+  height: 40px;
+  display: flex;
+ }
+ .logo{
+  width: 50px;
+  height: 44px;
+  margin-left: 70px;
+ }
+ .headleft{
+  align-items: center;
+  padding: 0;
+  max-width: 425px;
+  width: 100%;
+  margin: 0;
+  justify-content: center;
+  padding-top: 40px;
+ }
+}
+
+
+@media (max-width:480px) {
+  .Brandname{
+    display: none;
+  }
+
+  .logo{
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+.footermain{
+    height: 45px;
+    background-color:rgb(13, 13, 13);
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10%;
+}
+.footright,.footleft p{
+    font-family:Lato;
+    font-size: 14px;
+    color: #857878;
+}
+.footright{
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width:426px) {
+    .footermain{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 5%;
+        height: auto;
+    }
+    .footright,.footleft p{
+        font-size: 10px;
+    }
+}
