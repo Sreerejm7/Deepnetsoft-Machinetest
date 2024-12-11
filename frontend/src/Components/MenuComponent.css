@@ -41,8 +41,6 @@
 .menu-second{
   height: 79px;
   width: 100%;
-  background: url('C:\Users\91759\OneDrive\Desktop\SREEREJ\Machine Test\frontend\src\Assets\Rectangle 107.png') no-repeat center;
-  background-size: cover;
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -73,8 +71,6 @@
   width: 100%;
   min-height: 672px;
   height: 100%;
-  background: url('C:\Users\91759\OneDrive\Desktop\SREEREJ\Machine Test\frontend\src\Assets\Rectangle 116.png') no-repeat center;
-  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;

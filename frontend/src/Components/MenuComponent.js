@@ -9,7 +9,8 @@ import twitter from '../Assets/basil_twitter-outline.png'
 import instagram from '../Assets/Frame 151.png'
 import logo from "../Assets/Logo.png";
 import firstimg from '../Assets/Firstimg.png'
-import secondimg from '../Assets/Rectangle 107.png'
+import secondimg from '../Assets/Rectangle1.png'
+import thirgimg from '../Assets/Rectangle2.png'
 import axios from 'axios'
 
 function MenuComponent() {
@@ -52,20 +53,20 @@ function MenuComponent() {
     : product;
   return (
     <div className='menu'>
-      <div className="menu-menu" style={{background:`url(${firstimg}) no-repeat center`, backgroundSize:'cover'}}>
+      <div style={{background:`url(${firstimg})no-repeat`,backgroundSize:'cover'}} className="menu-menu">
         <div className="menu-con">
         <h2 className='menu-first'>MENU</h2>
         <p className='menu-description'>Please take a look at our menu featuring food,drinks,and brunch. if you'd like to place an order, use the 'Order Online button below the menu</p>
         </div>
       </div>
 
-      <div className="menu-second">
+      <div style={{background:`url(${secondimg})no-repeat`,backgroundSize:'cover'}} className="menu-second">
         {category && category.map((item,index)=>(
         <button key={index} onClick={()=>handlecategoryFilter(item)}>{item}</button>
       ))}
       </div>
 
-      <div className="menu-third">
+      <div style={{background:`url(${firstimg})no-repeat`,backgroundSize:'cover'}} className="menu-third">
         <div className="menu-third-container">
           
           <h2 className='menu-item-name'><hr className='horizontalline' />{selectedCategory ? selectedCategory : 'OUR SPECIALS'} <hr className='horizontalline' /></h2>
