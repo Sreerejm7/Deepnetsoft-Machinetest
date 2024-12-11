@@ -25,7 +25,7 @@ function AdditemComponent() {
       toast.error('Please Fill Al, the Fields',{autoClose:1500})
     }
     try {
-      const url = 'http://localhost:4000/addproduct'
+      const url = 'https://deepnetsoftmachinetest-x9ls.onrender.com/addproduct'
       const response = await axios.post(url,{category,name,description,price})
       if(response){
         toast.success(response.data.message,{autoClose:1500})
