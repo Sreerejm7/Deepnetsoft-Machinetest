@@ -26,7 +26,7 @@ function ReservationComponent() {
       toast.error('All Fields are Required',{autoClose:1000})
     }
     try {
-      const url='http://localhost:4000/addreservation'
+      const url='https://deepnetsoftmachinetest-x9ls.onrender.com/addreservation'
       const response = await axios.post(url,{name,email,number,date_and_time})
       if(response){
         toast.success(response.data.message,{autoClose:1000})
