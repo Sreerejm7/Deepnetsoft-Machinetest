@@ -22,7 +22,7 @@ function MenuComponent() {
 
   const fetchdata = async ()=>{
     try {
-      const url = 'http://localhost:4000/products'
+      const url = 'https://deepnetsoftmachinetest-x9ls.onrender.com/products'
       const response = await axios.get(url)
       if(response){
         const uniqueCategory=new Set(category)
