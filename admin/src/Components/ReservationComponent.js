@@ -8,7 +8,7 @@ function ReservationComponent() {
 
   const fetchdata = async () => {
     try {
-      const url = 'http://localhost:4000/reservations';
+      const url = 'https://deepnetsoftmachinetest-x9ls.onrender.com/reservations';
       const response = await axios.get(url);
       if (response) {
         setData(response.data.reservation);
@@ -24,7 +24,7 @@ function ReservationComponent() {
 
   const cancelReservation = async (id) => {
     try {
-      const url = `http://localhost:4000/reservations/${id}`;
+      const url = `https://deepnetsoftmachinetest-x9ls.onrender.com/reservations/${id}`;
       const response = await axios.delete(url);
       if (response) { 
         toast.success('Reservation Cancelled Sucessfully',{autoClose:1000})
