@@ -73,7 +73,7 @@ function MenuComponent() {
           <div className="menu-items-div">
             {filteredProducts.length >0 ? (filteredProducts.map((item,index)=>(<>
             <div className="menu-item" key={index}>
-              <h4>{item.name}............................${item.price}</h4>
+              <h4>{item.name}....................${item.price}</h4>
               <p className='menu-item-detail'>{item.description}</p>
             </div>
             </>))):(<p>No Products</p>)}
